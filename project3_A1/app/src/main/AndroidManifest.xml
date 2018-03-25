@@ -2,7 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.krunal.project3_a1">
 
-    <permission android:name="com.example.krunal.project3_a1" android:label="my_permission" android:protectionLevel="dangerous"></permission>
+    <permission
+        android:name="com.example.krunal.project3_a1"
+        android:description="@string/description"
+        android:label="my_permission"
+        android:protectionLevel="dangerous" />
+    <uses-permission android:name="com.example.krunal.project3_a1"/>
 
     <application
         android:allowBackup="true"
@@ -18,6 +23,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
     </application>
 
 </manifest>

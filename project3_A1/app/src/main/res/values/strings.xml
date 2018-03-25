@@ -2,4 +2,5 @@
     <string name="app_name">Project 3 App 1</string>
     <string name="find_attractions">Find Attractions</string>
     <string name="find_restaurants">Find Restaurants</string>
+    <string name="description">lookup restaurants and attractions</string>
 </resources>
