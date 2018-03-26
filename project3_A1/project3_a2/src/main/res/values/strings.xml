@@ -1,3 +1,47 @@
 <resources>
     <string name="app_name">project3_A2</string>
+    <string-array name="AttractionsTitles">
+        <item>Lincoln Park Zoo</item>
+        <item>Navy Pier</item>
+        <item>Museum of Science and Industry</item>
+        <item>Art Institute of Chicago</item>
+        <item>TILT!</item>
+        <item>Millennium Park</item>
+        <item>Grant Park</item>
+        <item>Shedd Aquarium</item>
+        <item>Field Museum of Natural Science</item>
+        <item>Adler Planetarium</item>
+    </string-array>
+    <string-array name="AttractionsLinks">
+        <item>https://www.lpzoo.org/</item>
+        <item>https://navypier.org/</item>
+        <item>https://www.msichicago.org/</item>
+        <item>http://www.artic.edu/</item>
+        <item>http://www.360chicago.com/tilt/</item>
+        <item>https://www.cityofchicago.org/city/en/depts/dca/supp_info/millennium_park.html</item>
+        <item>https://www.chicagoparkdistrict.com/parks-facilities/grant-park</item>
+        <item>https://www.sheddaquarium.org/</item>
+        <item>https://www.fieldmuseum.org/</item>
+        <item>https://www.adlerplanetarium.org/</item>
+    </string-array>
+
+    <string-array name="RestaurantsTitles">
+        <item>Lou Malnati's Pizzeria</item>
+        <item>Manny's Coffee Shop &amp; Deli</item>
+        <item>Chicago Pizza And Oven Grinder Co.</item>
+        <item>The Gage</item>
+        <item>The Dearborn</item>
+        <item>The Purple Pig</item>
+    </string-array>
+    <string-array name="RestaurantsLinks">
+        <item>https://www.loumalnatis.com/</item>
+        <item>https://www.mannysdeli.com/</item>
+        <item>http://chicagopizzaandovengrinder.com/</item>
+        <item>https://www.thegagechicago.com/</item>
+        <item>https://www.thedearborntavern.com/</item>
+        <item>https://thepurplepigchicago.com/</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

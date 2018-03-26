@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
-    tools:context="com.example.project3_a2.ActivityRestaurants">
+    tools:context="com.example.project3_a2.ActivityAttractions">
     <fragment
-        android:id="@+id/list_restaurants"
+        android:id="@+id/list_attractions"
         android:layout_width="0px"
         android:layout_height="match_parent"
-        android:layout_weight="1" />
+        android:layout_weight="1"
+        class="com.example.project3_a2.TitlesFragment"/>
 
     <fragment
-        android:id="@+id/details_restaurants"
+        android:id="@+id/details_attractions"
         android:layout_width="0px"
         android:layout_height="match_parent"
-        android:layout_weight="2"/>
+        android:layout_weight="2"
+        class="com.example.project3_a2.DetailsFragment"/>
+
 </LinearLayout>
