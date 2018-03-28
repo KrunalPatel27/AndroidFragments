@@ -12,7 +12,7 @@ import android.widget.ListView;
 //Several Activity and Fragment lifecycle methods are instrumented to emit LogCat output
 //so you can follow the class' lifecycle
 
-public class TitlesFragment extends ListFragment {
+public class RestaurantTitlesFragment extends ListFragment {
 
     private static final String TAG = "TitlesFragment";
     private ListSelectionListener mListener = null;
@@ -62,7 +62,7 @@ public class TitlesFragment extends ListFragment {
         // Set the list adapter for the ListView
         // Discussed in more detail in the user interface classes lesson
         setListAdapter(new ArrayAdapter<String>(getActivity(),
-                R.layout.fragment_item, ActivityAttractions.mTitleArray));
+                R.layout.fragment_item, ActivityRestaurants.mTitleArray));
 
         // If an item has been selected, set its checked state
         if (-1 != mCurrIdx) {

@@ -2,9 +2,13 @@ package com.example.project3_a2;
 
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.content.Intent;
 import android.content.res.Configuration;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 
 public class ActivityAttractions extends AppCompatActivity implements TitlesFragment.ListSelectionListener
 
@@ -57,5 +61,24 @@ public class ActivityAttractions extends AppCompatActivity implements TitlesFrag
             // Tell the QuoteFragment to show the quote string at position index
             mDetailsFragment.showQuoteAtIndex(index);
         }
+    }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.attractions_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getTitle().toString()){
+            case "Restaurants":
+                Intent intent1 = new Intent(getApplicationContext(), ActivityRestaurants.class);
+                getApplicationContext().startActivity(intent1);
+                break;
+            default:
+                break;
+        }
+        return true;
     }
 }

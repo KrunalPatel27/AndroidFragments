@@ -8,14 +8,16 @@
     tools:context="com.example.project3_a2.ActivityRestaurants">
     <fragment
         android:id="@+id/list_attractions"
-        android:layout_width="match_parent"
+        android:layout_width="0px"
         android:layout_height="match_parent"
+        android:layout_weight="1"
         class="com.example.project3_a2.RestaurantTitlesFragment"/>
 
     <fragment
         android:id="@+id/details_attractions"
-        android:layout_width="match_parent"
+        android:layout_width="0px"
         android:layout_height="match_parent"
+        android:layout_weight="2"
         class="com.example.project3_a2.RestaurantDetailsFragment"/>
 
 </LinearLayout>

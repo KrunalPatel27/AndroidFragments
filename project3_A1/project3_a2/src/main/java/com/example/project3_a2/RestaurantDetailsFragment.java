@@ -18,7 +18,7 @@ import android.widget.TextView;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class DetailsFragment extends Fragment {
+public class RestaurantDetailsFragment extends Fragment {
 
     private WebView webView = null;
     private int mCurrIdx = -1;
@@ -35,7 +35,7 @@ public class DetailsFragment extends Fragment {
         if (newIndex < 0 || newIndex >= mLinksArrayLen)
             return;
         mCurrIdx = newIndex;
-        webView.loadUrl(ActivityAttractions.mLinkArray[mCurrIdx]);
+        webView.loadUrl(ActivityRestaurants.mLinkArray[mCurrIdx]);
     }
 
     @Override
@@ -68,7 +68,7 @@ public class DetailsFragment extends Fragment {
         webView = (WebView) getActivity().findViewById(R.id.webView);
         webView.setWebViewClient(new WebViewClient());
         webView.setWebChromeClient(new WebChromeClient());
-        mLinksArrayLen = ActivityAttractions.mLinkArray.length;
+        mLinksArrayLen = ActivityRestaurants.mLinkArray.length;
         showQuoteAtIndex(mCurrIdx);
     }
 
